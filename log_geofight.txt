@@ -1,0 +1,159 @@
+2021-08-15 - 10:00:08pm
+b4B5MgChdYthW8iYovZUJm
+
+    <div>
+    <ul><li>start : Elapsed:  0</li><li>get_json : Elapsed:  0.02335786819458</li><li>connect_api : Elapsed:  0.015044212341309</li><li>get_balances : Elapsed:  0.0011248588562012</li><li>buy : Elapsed:  1.0175261497498</li><li>end : Elapsed:  0.0062358379364014</li><li> TOTAL : Elapsed:  1.0632889270782</li>
+        </ul>
+    </div>
+**************************************
+2021-08-15 - 11:39:02pm
+YjYYJUS7NJM1TOrY3sJxhQ
+
+    <div>
+    <ul><li>start : Elapsed:  0</li><li>get_json : Elapsed:  0.0092089176177979</li><li>connect_api : Elapsed:  0.0048871040344238</li><li>get_balances : Elapsed:  0.00028085708618164</li><li>sell : Elapsed:  106.25407409668</li><li>end : Elapsed:  4.8911230564117</li><li> TOTAL : Elapsed:  111.15957403183</li>
+        </ul>
+    </div>
+**************************************
+2021-08-16 - 12:30:02am
+QQ0fwPHHm5pl7INJijJ5Yk
+
+    <div>
+    <ul><li>start : Elapsed:  0</li><li>get_json : Elapsed:  0.007066011428833</li><li>connect_api : Elapsed:  0.0032007694244385</li><li>get_balances : Elapsed:  0.00020408630371094</li><li>buy : Elapsed:  0.78680109977722</li><li>end : Elapsed:  0.0019278526306152</li><li> TOTAL : Elapsed:  0.79919981956482</li>
+        </ul>
+    </div>
+**************************************
+2021-08-16 - 07:30:02am
+
+    <div>
+    <ul><li>start : Elapsed:  0</li><li>get_json : Elapsed:  0.12011313438416</li><li>connect_api : Elapsed:  0.016126871109009</li><li>get_balances : Elapsed:  0.0032069683074951</li><li>end : Elapsed:  0.40305209159851</li><li> TOTAL : Elapsed:  0.54249906539917</li>
+        </ul>
+    </div>
+**************************************
+2021-08-16 - 04:18:05pm
+Order ID = y5Gneo3EYHGTWPWz1elfVj
+
+    <div>
+    <ul><li>start : Elapsed:  0</li><li>get_json : Elapsed:  0.0057740211486816</li><li>connect_api : Elapsed:  0.0055108070373535</li><li>get_balances : Elapsed:  0.00027012825012207</li><li>before_sell : Elapsed:  6.9141387939453E-6</li><li>after_sell : Elapsed:  138.67311000824</li><li>end : Elapsed:  0.0011301040649414</li><li> TOTAL : Elapsed:  138.68580198288</li>
+        </ul>
+    </div>
+**************************************
+2021-08-16 - 04:19:00pm
+
+    <div>
+    <ul><li>start : Elapsed:  0</li><li>get_json : Elapsed:  0.0045969486236572</li><li>connect_api : Elapsed:  0.0038290023803711</li><li>get_balances : Elapsed:  0.0002739429473877</li><li>after_sell : Elapsed:  6.9141387939453E-6</li><li>end : Elapsed:  0.00076007843017578</li><li> TOTAL : Elapsed:  0.0094668865203857</li>
+        </ul>
+    </div>
+**************************************
+2021-08-16 - 04:19:27pm
+
+    <div>
+    <ul><li>start : Elapsed:  0</li><li>get_json : Elapsed:  0.0027799606323242</li><li>connect_api : Elapsed:  0.0029799938201904</li><li>get_balances : Elapsed:  0.00015711784362793</li><li>after_sell : Elapsed:  5.0067901611328E-6</li><li>end : Elapsed:  0.00073099136352539</li><li> TOTAL : Elapsed:  0.0066530704498291</li>
+        </ul>
+    </div>
+**************************************
+2021-08-16 - 04:32:43pm
+
+    <div>
+    <ul><li>start : Elapsed:  0</li><li>get_json : Elapsed:  0.015367984771729</li><li>connect_api : Elapsed:  0.0095610618591309</li><li>get_balances : Elapsed:  0.0004889965057373</li><li>end : Elapsed:  0.002112865447998</li><li> TOTAL : Elapsed:  0.027530908584595</li>
+        </ul>
+    </div>
+**************************************
+2021-08-16 - 08:30:11pm
+Order ID = VHj5gw5u8EXF2HmsOy4Lx3
+
+    <div>
+    <ul><li>start : Elapsed:  0</li><li>get_json : Elapsed:  0.0069100856781006</li><li>connect_api : Elapsed:  0.0042610168457031</li><li>get_balances : Elapsed:  0.00023889541625977</li><li>before_buy : Elapsed:  0.45931100845337</li><li>after_buy : Elapsed:  0.33542108535767</li><li>end : Elapsed:  0.63305902481079</li><li> TOTAL : Elapsed:  1.4392011165619</li>
+        </ul>
+    </div>
+**************************************
+2021-08-16 - 09:00:16pm
+Order ID = 3uwFDz8LydcSCrdhqMZmkk
+
+    <div>
+    <ul><li>start : Elapsed:  0</li><li>get_json : Elapsed:  0.0095012187957764</li><li>connect_api : Elapsed:  0.0065689086914062</li><li>get_balances : Elapsed:  0.0004270076751709</li><li>before_sell : Elapsed:  9.0599060058594E-6</li><li>after_sell : Elapsed:  4.2017159461975</li><li>end : Elapsed:  0.3501238822937</li><li> TOTAL : Elapsed:  4.5683460235596</li>
+        </ul>
+    </div>
+**************************************
+2021-08-17 - 03:30:06am
+Order ID = iY9skCPeXHObwdlymyif8L
+
+    <div>
+    <ul><li>start : Elapsed:  0</li><li>get_json : Elapsed:  0.013767004013062</li><li>connect_api : Elapsed:  0.0099217891693115</li><li>get_balances : Elapsed:  0.00045919418334961</li><li>before_buy : Elapsed:  0.43347001075745</li><li>after_buy : Elapsed:  0.31650495529175</li><li>end : Elapsed:  0.57384896278381</li><li> TOTAL : Elapsed:  1.3479719161987</li>
+        </ul>
+    </div>
+**************************************
+2021-08-17 - 08:00:21am
+Order ID = PEstCemIpvdKLEtLHXTrdH
+
+    <div>
+    <ul><li>start : Elapsed:  0</li><li>get_json : Elapsed:  0.14579200744629</li><li>connect_api : Elapsed:  0.018093824386597</li><li>get_balances : Elapsed:  0.0037400722503662</li><li>before_sell : Elapsed:  8.1062316894531E-6</li><li>after_sell : Elapsed:  3.9718518257141</li><li>end : Elapsed:  0.58931708335876</li><li> TOTAL : Elapsed:  4.7288029193878</li>
+        </ul>
+    </div>
+**************************************
+2021-08-17 - 10:00:22am
+Order ID = B45BY1yjxdw7RyWZqAzIEb
+
+    <div>
+    <ul><li>start : Elapsed:  0</li><li>get_json : Elapsed:  0.55661487579346</li><li>connect_api : Elapsed:  0.082862138748169</li><li>get_balances : Elapsed:  0.017336845397949</li><li>before_buy : Elapsed:  0.96511912345886</li><li>after_buy : Elapsed:  0.39569687843323</li><li>end : Elapsed:  0.34873199462891</li><li> TOTAL : Elapsed:  2.3663618564606</li>
+        </ul>
+    </div>
+**************************************
+2021-08-17 - 11:33:52am
+Order ID = 7ZQyBBR17uZcSrLM4GTRLT
+
+    <div>
+    <ul><li>start : Elapsed:  0</li><li>get_json : Elapsed:  0.0094850063323975</li><li>connect_api : Elapsed:  0.0061089992523193</li><li>get_balances : Elapsed:  0.00029301643371582</li><li>before_sell : Elapsed:  7.1525573730469E-6</li><li>after_sell : Elapsed:  5.0828728675842</li><li>end : Elapsed:  0.7038881778717</li><li> TOTAL : Elapsed:  5.8026552200317</li>
+        </ul>
+    </div>
+**************************************
+2021-08-17 - 03:30:09pm
+
+    <div>
+    <ul><li>start : Elapsed:  0</li><li>get_json : Elapsed:  0.01526403427124</li><li>connect_api : Elapsed:  0.0069031715393066</li><li>get_balances : Elapsed:  0.00046491622924805</li><li>end : Elapsed:  0.0012578964233398</li><li> TOTAL : Elapsed:  0.023890018463135</li>
+        </ul>
+    </div>
+**************************************
+2021-08-19 - 12:44:12am
+
+    <div>
+    <ul><li>start : Elapsed:  0</li><li>get_json : Elapsed:  0.29680991172791</li><li>connect_api : Elapsed:  0.03181004524231</li><li>get_balances : Elapsed:  0.0058519840240479</li><li>end : Elapsed:  0.0014340877532959</li><li> TOTAL : Elapsed:  0.33590602874756</li>
+        </ul>
+    </div>
+**************************************
+2021-08-19 - 02:37:32am
+
+    <div>
+    <ul><li>start : Elapsed:  0</li><li>get_json : Elapsed:  0.036886930465698</li><li>connect_api : Elapsed:  0.024259090423584</li><li>get_balances : Elapsed:  0.0012478828430176</li><li>end : Elapsed:  0.0016810894012451</li><li> TOTAL : Elapsed:  0.064074993133545</li>
+        </ul>
+    </div>
+**************************************
+2021-08-20 - 05:00:21am
+Order ID = iwfQLZcg2iufU0F4APZM3q
+
+    <div>
+    <ul><li>start : Elapsed:  0</li><li>get_json : Elapsed:  0.18772506713867</li><li>connect_api : Elapsed:  0.022345066070557</li><li>get_balances : Elapsed:  0.0037648677825928</li><li>before_sell : Elapsed:  8.1062316894531E-6</li><li>after_sell : Elapsed:  4.8772690296173</li><li>end : Elapsed:  0.34467887878418</li><li> TOTAL : Elapsed:  5.435791015625</li>
+        </ul>
+    </div>
+**************************************
+2021-08-20 - 03:09:26pm
+
+    <div>
+    <ul><li>start : Elapsed:  0</li><li>get_json : Elapsed:  0.29163098335266</li><li>connect_api : Elapsed:  0.011132955551147</li><li>get_balances : Elapsed:  0.00078606605529785</li><li>end : Elapsed:  0.38351392745972</li><li> TOTAL : Elapsed:  0.68706393241882</li>
+        </ul>
+    </div>
+**************************************
+2021-08-20 - 03:10:33pm
+
+    <div>
+    <ul><li>start : Elapsed:  0</li><li>get_json : Elapsed:  0.0045061111450195</li><li>connect_api : Elapsed:  0.0043070316314697</li><li>get_balances : Elapsed:  0.00021982192993164</li><li>end : Elapsed:  32.520547151566</li><li> TOTAL : Elapsed:  32.529580116272</li>
+        </ul>
+    </div>
+**************************************
+2021-08-20 - 03:16:40pm
+Order ID = Lvhck3nu3FJQk8MIr4Avl1
+
+    <div>
+    <ul><li>start : Elapsed:  0</li><li>get_json : Elapsed:  0.0066831111907959</li><li>connect_api : Elapsed:  0.0043129920959473</li><li>get_balances : Elapsed:  0.00022196769714355</li><li>before_buy : Elapsed:  0.3135130405426</li><li>after_buy : Elapsed:  0.31387686729431</li><li>end : Elapsed:  0.32439112663269</li><li> TOTAL : Elapsed:  0.96299910545349</li>
+        </ul>
+    </div>
+**************************************
