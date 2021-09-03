@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+                RewriteEngine on
+
+                RewriteCond %{REQUEST_FILENAME} !-f
+
+                RewriteCond %{REQUEST_FILENAME} !-d
+
+                RewriteCond %{DOCUMENT_ROOT}/Server%{REQUEST_URI} -f
+
+                RewriteRule . Server/%{REQUEST_URI} [L]
+
+</IfModule>
