@@ -4,7 +4,8 @@ require '../vendor/autoload.php';
 
     $stable_coin = 'BUSD';
     ob_start();
-
+    
+    $csv_file = array();
     // Takes raw data from the request
     $json = file_get_contents('php://input');
     
@@ -20,7 +21,8 @@ require '../vendor/autoload.php';
 
     date_default_timezone_set('Europe/Lisbon');
     echo date("Y-m-d"). ' - ' . date("h:i:sa") .PHP_EOL;
-    echo "data = ".print_r($data).PHP_EOL;
+    echo "data   = ".print_r($data).PHP_EOL;
+    $csv_file[0] = date("Y-m-d"). ' - ' . date("h:i:sa");
     
     $coin = str_replace($stable_coin, '', $data->ticker);
     //$balances = $api->balances();
@@ -95,7 +97,25 @@ require '../vendor/autoload.php';
         echo "Order = " . $order['side'] .PHP_EOL;
         echo '<pre>'; print_r($order); echo '</pre>';
         $orderID = $order['clientOrderId'].PHP_EOL;
+        $total = 0;
+        $i = 0;
+        foreach ($order['fills'] as $eachorder)
+        {
+           $total+=$eachorder['price'];
+           $i++;
+        }
+        $csv_file[3] = $total/$i;
+        $csv_file[4] = $order['executedQty'];
+        $csv_file[4] = $order['cummulativeQuoteQty'];
     }
+
+    $csv_file[1] = $data->ticker;
+    $csv_file[2] = $data->buy==1?"Buy":"Sell";
+
+    
+    $handle = fopen('../database_geofight.csv', "a");
+    fputcsv($handle, $csv_file);
+    fclose($handle);
     $balances = $api->balances();
     $balance[$coin]=$balances[$coin]['available'];
     $balance[$stable_coin]=$balances[$stable_coin]['available'];

@@ -10,7 +10,7 @@ $ch = curl_init($url);
 $jsonData = array(
     'buy' => '1',
     'password' => 'bazinga',
-    "ticker" => "TLMUSDT"
+    "ticker" => "BTCUSDC"
 );
 
 //Encode the array into JSON.
