@@ -2,7 +2,7 @@
 $profile = [["start" => microtime(true)]];
 require '../vendor/autoload.php';
 
-    $stable_coin = 'USDT';
+    $stable_coin = 'BUSD';
     ob_start();
 
     // Takes raw data from the request
@@ -39,7 +39,9 @@ require '../vendor/autoload.php';
         $balance = json_decode($get_balances, TRUE);        
     }
     $profile[] = ["get_balances" => microtime(true)];
-    
+    //echo "Balance = " . $balance[$coin] .' '. $coin . PHP_EOL;
+    //echo "Ticker = " . $data->ticker . PHP_EOL;
+
     if($data->buy==1)
     {
         $d = $api->price($data->ticker);
@@ -47,14 +49,16 @@ require '../vendor/autoload.php';
         {
             $quantity = number_format(($balance[$stable_coin]/$d), 3, '.', '');
             $quantity -= 0.005;
+            echo "Quantity = " . $quantity . PHP_EOL;
             if($quantity > 0)
             {
                 $profile[] = ["before_buy" => microtime(true)];
+                $api->useServerTime();
                 $order = $api->marketBuy($data->ticker, $quantity);
                 $profile[] = ["after_buy" => microtime(true)];
-                $balance[$stable_coin]=0;
+                /*$balance[$stable_coin]=0;
                 $balances = $api->balances();
-                $balance[$coin]=$balances[$coin]['available'];
+                $balance[$coin]=$balances[$coin]['available'];*/
             }
             else
                 echo "Not enough cash to make the buy".PHP_EOL;
@@ -65,15 +69,15 @@ require '../vendor/autoload.php';
     }
     elseif($data->buy==0)
     {
-        //echo "Balance = " . $balances[$coin]['available'] .' '. $coin . PHP_EOL;
         if(isset($balance[$coin]) && $balance[$coin] > 0)
         {
             $profile[] = ["before_sell" => microtime(true)];
+            $api->useServerTime();
             $order = $api->marketSell($data->ticker, $balance[$coin]);
             $profile[] = ["after_sell" => microtime(true)];
-            $balance[$coin]=0;
+            /*$balance[$coin]=0;
             $balances = $api->balances();
-            $balance[$stable_coin]=$balances[$stable_coin]['available'];
+            $balance[$stable_coin]=$balances[$stable_coin]['available'];*/
         }
         else
         {
@@ -92,6 +96,10 @@ require '../vendor/autoload.php';
         echo '<pre>'; print_r($order); echo '</pre>';
         $orderID = $order['clientOrderId'].PHP_EOL;
     }
+    $balances = $api->balances();
+    $balance[$coin]=$balances[$coin]['available'];
+    $balance[$stable_coin]=$balances[$stable_coin]['available'];
+
     echo PHP_EOL.'***************************************************'.PHP_EOL;
     
     $htmlStr = ob_get_contents();
