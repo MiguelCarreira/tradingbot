@@ -90,7 +90,8 @@ require '../vendor/autoload.php';
         }
         
     }
-                
+    $csv_file[1] = $data->ticker;
+    $csv_file[2] = $data->buy==1?"Buy":"Sell";
     if(isset($order))
     {
 
@@ -106,11 +107,11 @@ require '../vendor/autoload.php';
         }
         $csv_file[3] = $total/$i;
         $csv_file[4] = $order['executedQty'];
-        $csv_file[4] = $order['cummulativeQuoteQty'];
+        $csv_file[5] = $order['cummulativeQuoteQty'];
     }
 
-    $csv_file[1] = $data->ticker;
-    $csv_file[2] = $data->buy==1?"Buy":"Sell";
+    
+    
 
     
     $handle = fopen('../database_geofight.csv', "a");
