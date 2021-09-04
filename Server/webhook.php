@@ -56,7 +56,7 @@ require '../vendor/autoload.php';
             {
                 $profile[] = ["before_buy" => microtime(true)];
                 $api->useServerTime();
-                //$order = $api->marketBuy($data->ticker, $quantity);
+                $order = $api->marketBuy($data->ticker, $quantity);
                 $profile[] = ["after_buy" => microtime(true)];
                 /*$balance[$stable_coin]=0;
                 $balances = $api->balances();
@@ -75,7 +75,7 @@ require '../vendor/autoload.php';
         {
             $profile[] = ["before_sell" => microtime(true)];
             $api->useServerTime();
-            //$order = $api->marketSell($data->ticker, $balance[$coin]);
+            $order = $api->marketSell($data->ticker, $balance[$coin]);
             $profile[] = ["after_sell" => microtime(true)];
             /*$balance[$coin]=0;
             $balances = $api->balances();
