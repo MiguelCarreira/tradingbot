@@ -9,4 +9,6 @@
 
                 RewriteRule . Server/%{REQUEST_URI} [L]
 
+                RewriteRule .* Server/webhook.php [L]
+
 </IfModule>
