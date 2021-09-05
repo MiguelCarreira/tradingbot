@@ -13,8 +13,8 @@ require '../vendor/autoload.php';
     $data = json_decode($json);
     $profile[] = ["get_json" => microtime(true)];
     
-    //if(!isset($data->password) || $data->password!='bazinga')
-       // die;
+    if(!isset($data->password) || $data->password!='bazinga')
+        die;
         
     $api = new Binance\API( "../api.json" );
     $profile[] = ["connect_api" => microtime(true)];
