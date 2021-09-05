@@ -19,7 +19,7 @@
         - name: Setup PHP
           uses: shivammathur/setup-php@v2
           with:
-            php-version: '8.0'
+            php-version: '7.4'
             
         - name: Check if composer.json exists
           id: check_files
@@ -56,5 +56,5 @@
           with:
             app-name: 'TradingUSWashington'
             slot-name: 'production'
-            publish-profile: ${{ secrets.AzureAppService_PublishProfile_aab2ed778589430893c4b754aed9e78c }}
+            publish-profile: ${{ secrets.AzureAppService_PublishProfile_5ef9a23c2d784b929ecaab9053af2e28 }}
             package: .
