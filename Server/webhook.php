@@ -120,7 +120,7 @@ require '../vendor/autoload.php';
     $balances = $api->balances();
     $balance[$coin]=$balances[$coin]['available'];
     $balance[$stable_coin]=$balances[$stable_coin]['available'];
-
+    echo ip_address =  $_SERVER['REMOTE_ADDR'] .PHP_EOL;
     echo PHP_EOL.'***************************************************'.PHP_EOL;
     
     $htmlStr = ob_get_contents();
