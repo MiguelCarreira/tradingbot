@@ -50,7 +50,7 @@ require '../vendor/autoload.php';
         if(isset($balance[$stable_coin]) && $balance[$stable_coin]>0)
         {
             $quantity = number_format(($balance[$stable_coin]/$d), 3, '.', '');
-            $quantity -= 0.005;
+            $quantity -= 0.1; // quantity ETH 0.005
             echo "Quantity = " . $quantity . PHP_EOL;
             if($quantity > 0)
             {
