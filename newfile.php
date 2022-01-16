@@ -9,7 +9,7 @@ $ch = curl_init($url);
 //The JSON data.
 $jsonData = array(
     'buy' => '1',
-    'password' => 'bazinga',
+    'password' => 'xxx',
     "ticker" => "BTCUSDC"
 );
 
