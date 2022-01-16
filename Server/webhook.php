@@ -13,7 +13,7 @@ require '../vendor/autoload.php';
     $data = json_decode($json);
     $profile[] = ["get_json" => microtime(true)];
     
-    if(!isset($data->password) || $data->password!='bazinga')
+    if(!isset($data->password) || $data->password!='xxx')
         die;
         
     $api = new Binance\API( "../api.json" );
@@ -27,16 +27,16 @@ require '../vendor/autoload.php';
     $coin = str_replace($stable_coin, '', $data->ticker);
     //$balances = $api->balances();
     //echo "Balances = " . print_r($balances).PHP_EOL;
-    if(file_get_contents('../balances_geofight.json')===FALSE)
+    if(file_get_contents('../balances.json')===FALSE)
     {
-        echo "Error get from file balances_geofight.txt.";
+        echo "Error get from file balances.txt.";
         $get_balances = $api->balances();
         $balance[$stable_coin] = $get_balances[$stable_coin]['available'];
         $balance[$coin] = $get_balances[$coin]['available'];
     }
     else
     {
-        $get_balances = file_get_contents('../balances_geofight.json');
+        $get_balances = file_get_contents('../balances.json');
         //echo "Balances = " . $get_balances . PHP_EOL;
         $balance = json_decode($get_balances, TRUE);        
     }
@@ -114,7 +114,7 @@ require '../vendor/autoload.php';
     
 
     
-    $handle = fopen('../database_geofight.csv', "a");
+    $handle = fopen('../database.csv', "a");
     fputcsv($handle, $csv_file);
     fclose($handle);
     $balances = $api->balances();
@@ -126,11 +126,11 @@ require '../vendor/autoload.php';
     $htmlStr = ob_get_contents();
     ob_end_clean();
     $balance = json_encode($balance);
-    if(file_put_contents('../db_geofight.txt', $htmlStr,FILE_APPEND | LOCK_EX)===FALSE)
-        echo "Error writing to file db_geofight.txt.";
+    if(file_put_contents('../db.txt', $htmlStr,FILE_APPEND | LOCK_EX)===FALSE)
+        echo "Error writing to file db.txt.";
       
-    if(file_put_contents('../balances_geofight.json', $balance,LOCK_EX)===FALSE)
-        echo "Error writing to file balances_geofight.json.";
+    if(file_put_contents('../balances.json', $balance,LOCK_EX)===FALSE)
+        echo "Error writing to file balances.json.";
     
     $total =0;
     $a = date("Y-m-d"). ' - ' . date("h:i:sa") .PHP_EOL;
@@ -154,7 +154,7 @@ require '../vendor/autoload.php';
         </ul>
     </div>'.PHP_EOL;
     $a .= '**************************************'.PHP_EOL;
-     if(file_put_contents('../log_geofight.txt', $a,FILE_APPEND | LOCK_EX)===FALSE)
+     if(file_put_contents('../log.txt', $a,FILE_APPEND | LOCK_EX)===FALSE)
          echo "Error copy to file.";
         ?>
     <div>
